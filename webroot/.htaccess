@@ -1,0 +1,19 @@
+RewriteEngine On
+#
+# static
+#
+#RewriteRule ^$					index.php
+#RewriteRule ^index$				/
+#RewriteRule ^([a-z0-9\-]+)$			$1.php
+#RewriteRule ^([a-z0-9\-]+)\.(htm|html|asp)$	$1.php
+#RewriteRule ^login\.php(.*)$		login.php$1
+RewriteRule ^ftp/(.*)$		x.php?q=$1
+RewriteRule ^login$		login.php
+RewriteRule ^logout$		logout.php
+#
+#
+#
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$				/ [R]
+

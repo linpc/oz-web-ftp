@@ -1,0 +1,50 @@
+#list {
+	font-family: 'Courier', 'Courier New', 'Courier 10 Pitch', Monospace; 
+	width: 300px;
+}
+.dsc {
+	font-family: 'Courier', 'Courier New', 'Courier 10 Pitch', Monospace; 
+	position: absolute;
+	right: 40%;
+}
+.blank .dsc {
+	padding-right: 25px;
+}
+.dsc .size {
+}
+.dsc .timestamp {
+	padding-left: 1.3em;
+}
+.blank .dsc .timestamp {
+	padding-left: 4.9em;
+}
+
+li {
+	width: 100%;
+	list-style-type: none;
+}
+
+li.back {
+	list-style-image: url('back.gif');
+	display: none;
+}
+
+li.folder {
+	list-style-image: url('folder.gif');
+}
+
+li.file {
+	list-style-image: url('file.gif');
+}
+#login {
+	background: #ccc;
+	padding: 10px 20px;
+}
+.getlink {
+	float: right;
+}
+.getfilelink {
+	padding-left: 10px;
+	margin-left: 15px;
+	background: url(external.png) no-repeat;
+}
